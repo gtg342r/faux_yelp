@@ -1,4 +1,6 @@
 class Review < ApplicationRecord
+  mount_uploader :review_photo, ReviewPhotoUploader
+
   # Direct associations
 
   belongs_to :restaurant,
